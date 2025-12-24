@@ -3,7 +3,7 @@
 
 #### Background
 
-The Freeze Ledgers transaction implements the functionality proposed in [Indy HIPE 0162 Frozen Ledgers](https://github.com/hyperledger/indy-hipe/blob/master/text/0162-frozen-ledgers/README.md). That HIPE contains useful information for understanding this feature.
+The Freeze Ledgers transaction implements the functionality proposed in [Indy HIPE 0162 Frozen Ledgers](https://github.com/hyperledger-indy/indy-hipe/blob/master/text/0162-frozen-ledgers/README.md). That HIPE contains useful information for understanding this feature.
 
 
 #### Key Information
@@ -12,7 +12,7 @@ The Freeze Ledgers transaction implements the functionality proposed in [Indy HI
 
 - Frozen ledgers can't be unfrozen.
 
-- A frozen ledger can be removed using the [remove_ledger script] (https://github.com/hyperledger/indy-node/blob/master/scripts/remove_ledger.py), but beware that removing a ledger will delete its data. It can no longer be used for reading or writing. A production ledger with history should never be removed as this could make it impossible to reconstruct the history of the network. 
+- A frozen ledger can be removed using the [remove_ledger script] (https://github.com/hyperledger-indy/indy-node/blob/master/scripts/remove_ledger.py), but beware that removing a ledger will delete its data. It can no longer be used for reading or writing. A production ledger with history should never be removed as this could make it impossible to reconstruct the history of the network. 
 
 - The base ledgers cannot be frozen. These are POOL, CONFIG, AUDIT and DOMAIN.
 

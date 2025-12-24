@@ -29,8 +29,8 @@
             libindy \
             ursa
 
-        git clone https://github.com/hyperledger/indy-node.git
-        git clone https://github.com/hyperledger/indy-plenum.git
+        git clone https://github.com/hyperledger-indy/indy-node.git
+        git clone https://github.com/hyperledger-indy/indy-plenum.git
         # in both indy-node and indy-plenum checkout origin/main
         sudo cp /usr/lib/ursa/libursa.* /usr/lib/
         # Should be done in python env

@@ -16,12 +16,12 @@ However within specific parts of code (request handling, dynamic validation, pro
 ### Client request validation
 
 If it turns out that request is invalid we raise `InvalidClientRequest` exception, which is intercepted by generic request handling code and turned into REJECT or REQNACK reply to client.
-Good example of using such exception can be found [here](https://github.com/hyperledger/indy-plenum/blob/master/plenum/server/request_handlers/txn_author_agreement_handler.py#L24) and [here](https://github.com/hyperledger/indy-plenum/blob/master/plenum/server/request_handlers/txn_author_agreement_handler.py#L85).
+Good example of using such exception can be found [here](https://github.com/hyperledger-indy/indy-plenum/blob/master/plenum/server/request_handlers/txn_author_agreement_handler.py#L24) and [here](https://github.com/hyperledger-indy/indy-plenum/blob/master/plenum/server/request_handlers/txn_author_agreement_handler.py#L85).
 
 ### Consensus messages validation
 
 In most cases we separated validation code for consensus messages (like PREPREPARE, COMMIT, VIEW_CHANGE, etc) into separate functions which are called from message handlers. Processing logic depends on return values of such validator functions, which typically return a tuple of action (which can be process, discard or stash) and error string, which are passed to higher level generic processing code which can log that error when discarding message or can stash that message for a better time.
-Good example of using this strategy can be found [here](https://github.com/hyperledger/indy-plenum/blob/master/plenum/server/consensus/view_change_service.py#L162) and [here](https://github.com/hyperledger/indy-plenum/blob/master/plenum/server/consensus/view_change_service.py#L223).
+Good example of using this strategy can be found [here](https://github.com/hyperledger-indy/indy-plenum/blob/master/plenum/server/consensus/view_change_service.py#L162) and [here](https://github.com/hyperledger-indy/indy-plenum/blob/master/plenum/server/consensus/view_change_service.py#L223).
 
 ## Unexpected errors
 
@@ -35,4 +35,4 @@ In some way it is very similar to `assert`, with the difference that LogicError 
 With code which can be run during startup situation is a bit more tricky, because crashing at this point may lead to perpetual restart loop, rendering node effectively unavailable.
 If we end up in such situation it is better to investigate problem more deeply (even if takes more time) and try to redesign a module in such a way that only expected errors are possible (not counting things like out of memory errors and totally unexpected bugs).
 
-A bit more examples of error handling can be found [here](https://github.com/hyperledger/indy-plenum/blob/master/common/error_handling.py)
+A bit more examples of error handling can be found [here](https://github.com/hyperledger-indy/indy-plenum/blob/master/common/error_handling.py)

@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 # Build rocksdb at first
 ### Can be removed once the code has been updated to run with rocksdb v. 5.17
-### Issue 1551: Update RocksDB; https://github.com/hyperledger/indy-plenum/issues/1551
+### Issue 1551: Update RocksDB; https://github.com/hyperledger-indy/indy-plenum/issues/1551
 build_rocksdb_deb 5.8.8
 
 #### PyZMQCommand
@@ -105,7 +105,7 @@ build_from_pypi pyzmq 22.3.0 --zmq=bundled
 ##### install_requires
 build_from_pypi base58
 ### Needs to be pinned to 3.10.1 because from v4.0.0 the package name ends in python3-importlib-metadata_0.0.0_amd64.deb
-### https://github.com/hyperledger/indy-plenum/runs/4166593170?check_suite_focus=true#step:5:5304
+### https://github.com/hyperledger-indy/indy-plenum/runs/4166593170?check_suite_focus=true#step:5:5304
 build_from_pypi importlib-metadata 3.10.1
 build_from_pypi ioflo
 build_from_pypi jsonpickle 3.0.3

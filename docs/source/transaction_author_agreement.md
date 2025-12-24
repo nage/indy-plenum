@@ -12,7 +12,7 @@
 
 - Transaction Author Agreement is stored in Config Ledger.
 
-- Every Transaction Author Agreement consists of a text, unique version and ratification timestamp. See [transactions.md](https://github.com/hyperledger/indy-node/blob/master/docs/source/transactions.md) for details.
+- Every Transaction Author Agreement consists of a text, unique version and ratification timestamp. See [transactions.md](https://github.com/hyperledger-indy/indy-node/blob/master/docs/source/transactions.md) for details.
 
 - There could be multiple active Transaction Author Agreements in ledger.
 
@@ -24,19 +24,19 @@
 
 - It's also possible to query a Transaction Author Agreement by `version`, `digest` or `timestamp`.
 
-- See [requests.md](https://github.com/hyperledger/indy-node/blob/master/docs/source/requests.md) for details.
+- See [requests.md](https://github.com/hyperledger-indy/indy-node/blob/master/docs/source/requests.md) for details.
 
 #### Transaction Author Agreement Acceptance Mechanisms List (TAA AML)
 
 - Transaction Author Agreement can be accepted by a number of different ways. The list of possible acceptance mechanisms is stored in Config Ledger. 
 
-- Each Acceptance Mechanisms List has a unique version. See [transactions.md](https://github.com/hyperledger/indy-node/blob/master/docs/source/transactions.md) for details.
+- Each Acceptance Mechanisms List has a unique version. See [transactions.md](https://github.com/hyperledger-indy/indy-node/blob/master/docs/source/transactions.md) for details.
 
 - It's possible to get the latest Transaction Author Agreement Acceptance Mechanisms List from the ledger.
 
 - It's also possible to query a Transaction Author Agreement Acceptance Mechanisms List by `version`  or `timestamp`.
 
-- See [requests.md](https://github.com/hyperledger/indy-node/blob/master/docs/source/requests.md) for details.
+- See [requests.md](https://github.com/hyperledger-indy/indy-node/blob/master/docs/source/requests.md) for details.
 
 #### Enabling Transaction Author Agreement
 
@@ -44,7 +44,7 @@
 
 - Transaction Author Agreement is disabled by default for all ledgers, so acceptance is not required by default.
  
-- Transaction Author Agreement can be enabled for DOMAIN and plugins ledgers by setting `TRANSACTION_AUTHOR_AGREEMENT` transaction with non-empty text (see [transactions.md](https://github.com/hyperledger/indy-node/blob/master/docs/source/transactions.md)). Please note that a `TRANSACTION_AUTHOR_AGREEMENT_AML` transaction needs to be sent before sending the first `TRANSACTION_AUTHOR_AGREEMENT`.
+- Transaction Author Agreement can be enabled for DOMAIN and plugins ledgers by setting `TRANSACTION_AUTHOR_AGREEMENT` transaction with non-empty text (see [transactions.md](https://github.com/hyperledger-indy/indy-node/blob/master/docs/source/transactions.md)). Please note that a `TRANSACTION_AUTHOR_AGREEMENT_AML` transaction needs to be sent before sending the first `TRANSACTION_AUTHOR_AGREEMENT`.
 
 - A new Transaction Author Agreement must have a ratification timestamp specified which can not be changed later. 
 Ratification timestamp value may have any precision up to seconds.
@@ -96,7 +96,7 @@ A new Agreement needs to be sent instead.
 
 - Requests to POOL and CONFIG ledgers must not have any Transaction Author Agreement Acceptance metadata.
 
-- See [requests.md](https://github.com/hyperledger/indy-node/blob/master/docs/source/requests.md) for details.
+- See [requests.md](https://github.com/hyperledger-indy/indy-node/blob/master/docs/source/requests.md) for details.
 
 #### How ledger validates Transaction Author Agreement metadata in a request
 

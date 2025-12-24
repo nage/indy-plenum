@@ -1,9 +1,9 @@
 ![logo](indy-logo.png)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hyperledger/indy-plenum/tree/main)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hyperledger-indy/indy-plenum/tree/main)
 
 <p float="left">
-  <a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-plenum"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-plenum/badge" />
+  <a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger-indy/indy-plenum"><img src="https://api.scorecard.dev/projects/github.com/hyperledger-indy/indy-plenum/badge" />
 </p>
 
 - [Announcements](#announcements)
@@ -50,7 +50,7 @@ More documentation can be found in [docs](docs).
 
 ## Other Documentation
 
-- Please have a look at aggregated documentation at [indy-node-documentation](https://github.com/hyperledger/indy-node/blob/master/README.md) which describes workflows and setup scripts common for both projects.
+- Please have a look at aggregated documentation at [indy-node-documentation](https://github.com/hyperledger-indy/indy-node/blob/master/README.md) which describes workflows and setup scripts common for both projects.
 
 
 ## Indy Plenum Repository Structure
@@ -60,7 +60,7 @@ More documentation can be found in [docs](docs).
 - common:
     - common and utility code
 - crypto:
-    - basic crypto-related code (in particular, [indy-crypto](https://github.com/hyperledger/indy-crypto) wrappers)
+    - basic crypto-related code (in particular, [indy-crypto](https://github.com/hyperledger-indy/indy-crypto) wrappers)
 - ledger:
     - Provides a simple, python-based, immutable, ordered log of transactions
 backed by a merkle tree.
@@ -85,7 +85,7 @@ Python, and as such, requires Python version 3.5.0 or later.
 - Plenum also depends on [libsodium](https://download.libsodium.org/doc/), an awesome crypto library. These need to be installed
 separately.
 - Plenum uses [ZeroMQ](http://zeromq.org/) as a secure transport
-- [indy-crypto](https://github.com/hyperledger/indy-crypto)
+- [indy-crypto](https://github.com/hyperledger-indy/indy-crypto)
     - A shared crypto library
     - It's based on [AMCL](https://github.com/milagro-crypto/amcl)
     - In particular, it contains BLS multi-signature crypto needed for state proofs support in Indy.
@@ -100,7 +100,7 @@ Use project name `INDY`.
 ## How to Contribute
 
 - We'd love your help; see these [instructions on how to contribute](https://wiki.hyperledger.org/display/indy/How+to+Contribute).
-- You may also want to read this info about [maintainers](https://github.com/hyperledger/indy-node/blob/stable/MAINTAINERS.md).
+- You may also want to read this info about [maintainers](https://github.com/hyperledger-indy/indy-node/blob/stable/MAINTAINERS.md).
 
 
 ## How to Start Working with the Code
@@ -112,12 +112,12 @@ If you are new to the concept of devcontainers in combination with VSCode [here]
 Simply clone this repository and VSCode will most likely ask you to open it in the devcontainer, if you have the correct extension("ms-vscode-remote.remote-containers") installed.
 If VSCode didn't ask to open it, open the command palette and use the `Remote-Containers: Rebuild and Reopen in Container` command.
 
-If you want to use Gitpod simply use this [link](https://gitpod.io/#https://github.com/hyperledger/indy-plenum/tree/main)
-or if you want to work with your fork, prefix the entire URL of your branch with  `gitpod.io/#` so that it looks like `https://gitpod.io/#https://github.com/hyperledger/indy-plenum/tree/main`.
+If you want to use Gitpod simply use this [link](https://gitpod.io/#https://github.com/hyperledger-indy/indy-plenum/tree/main)
+or if you want to work with your fork, prefix the entire URL of your branch with  `gitpod.io/#` so that it looks like `https://gitpod.io/#https://github.com/hyperledger-indy/indy-plenum/tree/main`.
 
 **Note**: Be aware that the config files for Gitpod and VSCode are currently only used in the `main` branch!
 
-Please have a look at [Dev Setup](https://github.com/hyperledger/indy-node/blob/main/docs/source/setup-dev.md) in indy-node repo.
+Please have a look at [Dev Setup](https://github.com/hyperledger-indy/indy-node/blob/main/docs/source/setup-dev.md) in indy-node repo.
 It contains common setup for both indy-plenum and indy-node.
 
 

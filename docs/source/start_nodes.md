@@ -1,7 +1,7 @@
 # Start Nodes
 
 #### Notification
-Please be aware that recommended way of starting a pool is to [use Docker](https://github.com/hyperledger/indy-node/blob/master/environment/docker/pool/README.md).
+Please be aware that recommended way of starting a pool is to [use Docker](https://github.com/hyperledger-indy/indy-node/blob/master/environment/docker/pool/README.md).
 
 
 

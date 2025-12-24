@@ -31,7 +31,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9692C00E657DDE61 &&
 
 
 # Plenum
-#  - https://github.com/hyperledger/indy-plenum/issues/1546
+#  - https://github.com/hyperledger-indy/indy-plenum/issues/1546
 #  - Needed to pick up rocksdb=5.8.8
 RUN echo "deb  https://hyperledger.jfrog.io/artifactory/indy focal dev"  >> /etc/apt/sources.list && \
     echo "deb http://security.ubuntu.com/ubuntu bionic-security main"  >> /etc/apt/sources.list && \

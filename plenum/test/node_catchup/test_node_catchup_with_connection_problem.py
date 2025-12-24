@@ -18,7 +18,7 @@ call_count = 0
 #   - test_catchup_with_lost_ledger_status hangs if run 4 times
 #   - test_catchup_with_lost_first_consistency_proofs always hangs on the first iteration
 #   - test_cancel_request_cp_and_ls_after_catchup  always hangs on the first iteration
-#  - https://github.com/hyperledger/indy-plenum/issues/1546
+#  - https://github.com/hyperledger-indy/indy-plenum/issues/1546
 @pytest.fixture(scope='function', params=range(1, 5))
 def lost_count(request):
     return request.param
@@ -79,8 +79,8 @@ def test_catchup_with_lost_ledger_status(txnPoolNodeSet,
     waitNodeDataEquality(looper, node_to_disconnect, *txnPoolNodeSet,
                          exclude_from_check=['check_last_ordered_3pc_backup'])
 
-# Upgrade RocksDB to v5.17 https://github.com/hyperledger/indy-plenum/issues/1551   
-# @pytest.mark.skip(reason="This test hangs on the first iteration.  Investigation required; https://github.com/hyperledger/indy-plenum/issues/1546.")
+# Upgrade RocksDB to v5.17 https://github.com/hyperledger-indy/indy-plenum/issues/1551   
+# @pytest.mark.skip(reason="This test hangs on the first iteration.  Investigation required; https://github.com/hyperledger-indy/indy-plenum/issues/1546.")
 def test_catchup_with_lost_first_consistency_proofs(txnPoolNodeSet,
                                                     looper,
                                                     sdk_pool_handle,
@@ -137,8 +137,8 @@ def test_catchup_with_lost_first_consistency_proofs(txnPoolNodeSet,
     waitNodeDataEquality(looper, node_to_disconnect, *txnPoolNodeSet,
                          exclude_from_check=['check_last_ordered_3pc_backup'])
 
-# Upgrade RocksDB to v5.17 https://github.com/hyperledger/indy-plenum/issues/1551 
-# @pytest.mark.skip(reason="This test hangs on the first iteration.  Investigation required; https://github.com/hyperledger/indy-plenum/issues/1546.")
+# Upgrade RocksDB to v5.17 https://github.com/hyperledger-indy/indy-plenum/issues/1551 
+# @pytest.mark.skip(reason="This test hangs on the first iteration.  Investigation required; https://github.com/hyperledger-indy/indy-plenum/issues/1546.")
 def test_cancel_request_cp_and_ls_after_catchup(txnPoolNodeSet,
                                                 looper,
                                                 sdk_pool_handle,

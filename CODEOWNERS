@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Indy Admin
-*       @hyperledger/indy-admin
+*       @hyperledger-indy/indy-admin
 
 # Indy Common
-*       @hyperledger/indy-common
+*       @hyperledger-indy/indy-common
 
 # Indy Plenum Maintainers
-*       @hyperledger/indy-plenum-maintainers
+*       @hyperledger-indy/indy-plenum-maintainers
