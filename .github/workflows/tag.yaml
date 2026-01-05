@@ -21,12 +21,12 @@ jobs:
           fetch-depth: 0
       - name: extract branch
         id: get-branch
-        uses: hyperledger-indy/indy-shared-gha/.github/actions/branch-from-tag@v1
+        uses: hyperledger-indy/indy-shared-gha/.github/actions/branch-from-tag@v2.0.3
         with:
           tag: ${{ github.ref }}
       - name: get-release-info
         id: get-release-info
-        uses: hyperledger-indy/indy-shared-gha/.github/actions/get-release-info@v1
+        uses: hyperledger-indy/indy-shared-gha/.github/actions/get-release-info@v2.0.3
         with:
           versionString: "${{ github.ref }}"
 
